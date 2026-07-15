@@ -106,6 +106,7 @@ const LOOK = {
 };
 
 const BACK_NOTE = "Don't Be Cruel";
+const BACK_NOTE_URL = "https://youtu.be/qmlEk9rouX0";
 
 const SPLASH_MS = 3000;
 const SPLASH_IMAGES = [
@@ -694,7 +695,17 @@ export default function App() {
               <p className={loading && !weather ? "loading-hint" : undefined}>
                 High {highText} / Low {lowText}
               </p>
-              <p>{BACK_NOTE}</p>
+              <p>
+                <a
+                  className="back-link"
+                  href={BACK_NOTE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {BACK_NOTE}
+                </a>
+              </p>
             </div>
           </section>
         </div>

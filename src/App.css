@@ -283,6 +283,12 @@
   white-space: nowrap;
 }
 
+.back-copy .back-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
 .loading-hint {
   opacity: 0.35;
 }
